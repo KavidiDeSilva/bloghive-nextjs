@@ -1,26 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BlogHive Next.js Project
+This is a Next.js project that displays blog posts fetched from a GraphQL API. It consists of two pages, the homepage and the blog post page, and a reusable BlogCard component.
 
 ## Getting Started
+To get started with this project, you can follow these steps:
 
-First, run the development server:
+Clone the repository to your local machine using `git clone https://github.com/KavidiDeSilva/bloghive-nextjs.git.`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Navigate to the project directory using `cd BlogHive`.
+
+Install the dependencies using `npm install`.
+
+Start the development server using `npm run dev`.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Click on a blog post to see the blog post page.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+
+## Technologies Used
+This project was built using the following technologies:
+
+- Next.js
+- GraphQL
+- GraphQL Request
+- Inter font from Google Fonts
+- CSS modules
+
+## Pages
+This project has two pages:
+
+### Homepage
+The homepage displays a list of blog posts fetched from the GraphQL API. Each blog post is displayed using the reusable BlogCard component.
+
+### Blog Post Page
+The blog post page displays a single blog post fetched from the GraphQL API. It displays the title, author, cover photo, date published, and content of the blog post.
+
+## Components
+This project has one reusable component:
+
+### BlogCard
+The BlogCard component is used to display a single blog post on the homepage. It displays the title, author, cover photo, and date published of the blog post.
+
+### GraphQL API
+This project fetches blog posts from a GraphQL API. The GraphQL API is provided by GraphCMS.
+
+## Deployment
+This project is deployed using hosting services Vercel.
 
 ## Learn More
 
